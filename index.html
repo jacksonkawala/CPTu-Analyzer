@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CPTu SBT Chart Plotter</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.plot.ly/plotly-2.20.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>CPTu SBT Chart Plotter</h1>
+    <p>Upload your CPTu CSV data to visualize the Robertson Soil Behavior Type (SBT) chart.</p>
+  </header>
+  <main>
+    <section class="upload">
+      <input type="file" id="fileInput" accept=".csv" />
+      <button onclick="plotData()">Plot SBT Chart</button>
+    </section>
+    <div id="chart"></div>
+  </main>
+  <footer>
+    <p>Hosted on GitHub Pages - Geotechnical Engineering Tool</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
